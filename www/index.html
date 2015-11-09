@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="starter">
+        <ion-pane>
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Ionic Blank Starter</h1>
+            </ion-header-bar>
+            <ion-content ng-controller="MapController">
+                <div id="map" data-tap-disabled="true"></div>
+            </ion-content>
+        </ion-pane>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDj0HvcP9DHNjIvCKMuACa6pxdhXKoTMD0&sensor=true"></script>
+    </body>
+</html> -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxSPW5CJgpdgO_s4yyMovOaVh_KvvhSfpvagV18eOyDWu7VytS6Bi1CWxw"
+      type="text/javascript"></script>
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="starter">
+        <ion-pane>
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Ionic Blank Starter</h1>
+            </ion-header-bar>
+            <ion-content ng-controller="MapController">
+               
+                  <p>
+                    Enter an address, and then drag the marker to tweak the location.
+                    <br/>
+                    The latitude/longitude will appear in the infowindow after each geocode/drag.
+                  </p>
+                    <div class="list">
+                      <div class="item item-input-inset">
+                        <label class="item-input-wrapper">
+                          <input type="text" placeholder="Location" name="address" ng-model="loc">
+                        </label>
+                        <button class="button button-small" type="button" ng-click="getLocation(loc)">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+
+                  <div id="map_canvas" style="width: 600px; height: 400px"></div>
+                 
+            </ion-content>
+        </ion-pane>
+    </body>
+</html>
